@@ -1,0 +1,11 @@
+# Fixed tensors
+zero_tsr = tf.zeros([row_dim, col_dim])
+ones_tsr = tf.ones([row_dim, col_dim])
+filled_tsr = tf.fill([row_dim, col_dim], 42)
+constant_tsr = tf.constant([1,2,3]) or constant_tsr = tf.constant(42,[row_dim, col_dim])
+
+# Tensors of similar shapes
+zeros_similar = tf.zeros_like(constant_tsr)
+ones_similar = tf.ones_like(constant_tsr)
+
+# sequence tensors
